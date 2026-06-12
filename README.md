@@ -29,3 +29,7 @@ A complete audit trail of every change to sensitive AD groups (built-in privileg
 ## Security Copilot: Defender XDR Plugin & Embedded Experience
 
 Why the **Microsoft Defender XDR plugin** must be enabled in Security Copilot for the embedded Copilot features in the Defender portal to work — incident summaries, guided responses, script analysis, NL-to-KQL, and incident reports — plus the SCU capacity prerequisite and the standalone-vs-embedded distinction. See [the guide](security-copilot-defender-xdr-plugin/security-copilot-defender-xdr-plugin.md) with architecture diagram.
+
+## Device Page Timeline Tab: Events Before an Alert
+
+Reviewing the events that occurred **before** a high-severity alert using the **Timeline tab** on the device page: the per-device chronological event stream, filtering by MITRE technique, event flags, CSV export, 6-month history, and how the timeline differs from the alert story, Advanced Hunting, and the incident graph. See [the guide](mde-device-timeline/device-timeline-events-before-alert.md) with architecture diagram.
