@@ -17,3 +17,7 @@ How the Sentinel platform balances cost and queryability: the **Analytics** and 
 ## Blocking Custom IPs & URLs with Defender for Endpoint
 
 Blocking specific IP addresses and URLs on devices with **custom network indicators**: the **Custom network indicators** advanced feature, the network protection (block mode) and Defender AV prerequisites, and enforcement via SmartScreen vs. network protection. See [the guide](mde-blocking-custom-ips-urls/blocking-custom-ips-and-urls-with-defender-for-endpoint.md) with architecture diagram.
+
+## Attack Surface Reduction (ASR) Rules
+
+Blocking executable content from email and unsigned processes from USB drives with **ASR rules**: the built-in rule catalog, the Defender Antivirus primary-AV prerequisite, Audit/Block/Warn rollout, deployment via Intune/GPO/PowerShell, and monitoring ASR events in `DeviceEvents`. See [the guide](mde-asr-rules/attack-surface-reduction-rules.md) with architecture diagram.
