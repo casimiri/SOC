@@ -15,7 +15,6 @@ The giveaway: both requirements are near-verbatim names of built-in ASR rules:
 - **Block executable content from email client and webmail**
 - **Block untrusted and unsigned processes that run from USB**
 
-When requirements read like rule names, the question is testing whether you recognize the ASR rule catalog.
 
 ## What ASR rules are
 
