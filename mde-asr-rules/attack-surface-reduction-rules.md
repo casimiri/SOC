@@ -77,4 +77,3 @@ The Defender portal also provides ASR reports under **Reports → Attack surface
 - [Attack surface reduction rules overview](https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction)
 - [ASR rules reference (full rule list and GUIDs)](https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-reference)
 - [Enable attack surface reduction rules](https://learn.microsoft.com/en-us/defender-endpoint/enable-attack-surface-reduction)
-- [SC-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200)
