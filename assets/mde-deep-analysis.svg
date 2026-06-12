@@ -1,0 +1,54 @@
+<svg viewBox="0 0 960 660" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="660" fill="#ffffff"/>
+  <text x="480" y="42" font-size="24" font-weight="600" fill="#1e1e1e" text-anchor="middle">Defender for Endpoint: Submit for Deep Analysis</text>
+
+  <!-- Portal zone -->
+  <rect x="40" y="90" width="300" height="230" rx="14" fill="#dbe4ff" opacity="0.35" stroke="#4a9eed"/>
+  <text x="60" y="118" font-size="16" font-weight="600" fill="#2563eb">Microsoft Defender portal</text>
+  <rect x="60" y="140" width="260" height="55" rx="10" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="190" y="173" font-size="15" fill="#1e1e1e" text-anchor="middle">Security analyst</text>
+  <rect x="60" y="225" width="260" height="70" rx="10" fill="#ffd8a8" stroke="#f59e0b" stroke-width="2"/>
+  <text x="190" y="255" font-size="13" fill="#1e1e1e" text-anchor="middle">File page &gt; Deep analysis tab &gt;</text>
+  <text x="190" y="275" font-size="13" fill="#1e1e1e" text-anchor="middle">Submit</text>
+  <line x1="190" y1="195" x2="190" y2="220" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Device -->
+  <rect x="40" y="400" width="300" height="95" rx="10" fill="#c3fae8" stroke="#0d9488" stroke-width="2"/>
+  <text x="190" y="435" font-size="13" fill="#1e1e1e" text-anchor="middle">Device holding the file — must be online,</text>
+  <text x="190" y="457" font-size="13" fill="#1e1e1e" text-anchor="middle">sample collection allowed</text>
+
+  <!-- Sandbox zone -->
+  <rect x="450" y="150" width="250" height="240" rx="14" fill="#e5dbff" opacity="0.4" stroke="#8b5cf6"/>
+  <text x="470" y="178" font-size="16" font-weight="600" fill="#6d28d9">Microsoft cloud sandbox</text>
+  <rect x="470" y="200" width="210" height="110" rx="10" fill="#d0bfff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="575" y="240" font-size="14" fill="#1e1e1e" text-anchor="middle">Isolated VM — file is</text>
+  <text x="575" y="262" font-size="14" fill="#1e1e1e" text-anchor="middle">detonated / executed safely</text>
+  <text x="470" y="340" font-size="13" fill="#757575">no risk of spreading infection</text>
+  <text x="470" y="360" font-size="13" fill="#757575">in your network</text>
+
+  <line x1="320" y1="268" x2="445" y2="250" stroke="#f59e0b" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="382" y="240" font-size="13" fill="#946000" text-anchor="middle">request</text>
+  <line x1="340" y1="430" x2="500" y2="315" stroke="#0d9488" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="420" y="395" font-size="13" fill="#0d9488" text-anchor="middle">sample uploaded</text>
+
+  <!-- Report -->
+  <rect x="760" y="140" width="180" height="260" rx="10" fill="#b2f2bb" stroke="#15803d" stroke-width="2"/>
+  <text x="850" y="178" font-size="14" font-weight="600" fill="#1e1e1e" text-anchor="middle">Behavioral report</text>
+  <text x="850" y="210" font-size="13" fill="#444" text-anchor="middle">process activity</text>
+  <text x="850" y="235" font-size="13" fill="#444" text-anchor="middle">registry changes</text>
+  <text x="850" y="260" font-size="13" fill="#444" text-anchor="middle">network contacts</text>
+  <text x="850" y="280" font-size="13" fill="#444" text-anchor="middle">(IPs / URLs)</text>
+  <text x="850" y="305" font-size="13" fill="#444" text-anchor="middle">dropped files</text>
+  <line x1="700" y1="268" x2="755" y2="268" stroke="#15803d" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="727" y="255" font-size="13" fill="#15803d" text-anchor="middle">~10 min</text>
+
+  <!-- Notes -->
+  <text x="40" y="555" font-size="14" fill="#757575">Supports PE files (.exe, .dll); the report appears on the file page in the portal.</text>
+  <text x="40" y="577" font-size="14" fill="#757575">Analyze suspicious files safely — the malware never runs in your environment.</text>
+
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1e1e1e"/>
+    </marker>
+  </defs>
+</svg>
