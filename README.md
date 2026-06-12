@@ -4,7 +4,7 @@ Notes, guides, and architecture diagrams for Microsoft Sentinel and Defender XDR
 
 ## Sentinel Detection Flow
 
-A walkthrough of how Microsoft Sentinel turns raw signals into triageable incidents: an **analytics rule** runs a KQL query (or matches threat-intelligence indicators) against your workspace log tables, emits **alerts** when results are found, and groups those alerts into **incidents** for analysts. See [the guide](sentinel-detection-flow/sentinel-detection-flow.md) with architecture diagram.
+A walkthrough of how Microsoft Sentinel turns raw signals into triageable incidents: an **analytics rule** runs a KQL query (or matches threat-intelligence indicators) against your workspace log tables, emits **alerts** when results are found, and groups those alerts into **incidents** for analysts. See [the guide](sentinel-detection-flow/sentinel-detection-flow.md) with architecture diagram, plus a **[hands-on lab](sentinel-detection-flow/sentinel-detection-flow-lab.md)** that builds the entire flow — ingestion, KQL detection, scheduled rule with entity mapping, a self-triggered incident, and an automation rule — on the Sentinel free trial in ~90 minutes.
 
 ## Hunt for Threats Using the Sentinel MCP Server
 
