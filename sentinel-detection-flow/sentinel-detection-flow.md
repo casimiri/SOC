@@ -20,3 +20,7 @@ The rule runs its query against your **workspace log tables** on a schedule. **T
 ## Where the analytics rule stops
 
 Everything to the right of the incident — assignment, tagging, playbooks — belongs to **automation rules**, not to the analytics rule itself.
+
+## Hands-on lab
+
+Build this entire flow yourself — ingestion, KQL detection, scheduled rule with entity mapping, a self-triggered incident, and an automation rule — in the companion lab: [Sentinel Detection Flow Lab](sentinel-detection-flow-lab.md) (~60–90 min, runs on the Sentinel free trial).
