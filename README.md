@@ -21,3 +21,7 @@ Blocking specific IP addresses and URLs on devices with **custom network indicat
 ## Attack Surface Reduction (ASR) Rules
 
 Blocking executable content from email and unsigned processes from USB drives with **ASR rules**: the built-in rule catalog, the Defender Antivirus primary-AV prerequisite, Audit/Block/Warn rollout, deployment via Intune/GPO/PowerShell, and monitoring ASR events in `DeviceEvents`. See [the guide](mde-asr-rules/attack-surface-reduction-rules.md) with architecture diagram.
+
+## Defender for Identity: Modifications to Sensitive Groups Report
+
+A complete audit trail of every change to sensitive AD groups (built-in privileged groups + manually tagged accounts/groups), detected by the **MDI sensor** on domain controllers — including the report-vs-alert distinction and the `IdentityDirectoryEvents` hunting companion. See [the guide](mdi-sensitive-groups-report/modifications-to-sensitive-groups-report.md) with architecture diagram.
