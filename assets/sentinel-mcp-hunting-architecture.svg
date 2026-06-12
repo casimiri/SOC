@@ -1,0 +1,74 @@
+<svg viewBox="0 0 960 640" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="640" fill="#ffffff"/>
+  <text x="480" y="42" font-size="26" font-weight="600" fill="#1e1e1e" text-anchor="middle">Threat Hunting with the Microsoft Sentinel MCP Server</text>
+
+  <!-- VS Code zone -->
+  <rect x="40" y="90" width="300" height="300" rx="14" fill="#dbe4ff" opacity="0.45" stroke="#4a9eed"/>
+  <text x="60" y="118" font-size="17" font-weight="600" fill="#2563eb">Visual Studio Code (MCP host)</text>
+  <rect x="65" y="140" width="250" height="70" rx="10" fill="#d0bfff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="190" y="170" font-size="15" fill="#1e1e1e" text-anchor="middle">GitHub Copilot Agent</text>
+  <text x="190" y="190" font-size="13" fill="#444" text-anchor="middle">(agent mode = MCP client)</text>
+  <rect x="65" y="290" width="250" height="65" rx="10" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="190" y="318" font-size="15" fill="#1e1e1e" text-anchor="middle">Jupyter Notebook</text>
+  <text x="190" y="338" font-size="13" fill="#444" text-anchor="middle">(runs against the data lake)</text>
+  <line x1="190" y1="210" x2="190" y2="285" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="200" y="252" font-size="13" fill="#555">writes / runs code</text>
+
+  <!-- MCP server -->
+  <rect x="420" y="130" width="240" height="75" rx="10" fill="#ffd8a8" stroke="#f59e0b" stroke-width="2"/>
+  <text x="540" y="162" font-size="16" font-weight="600" fill="#1e1e1e" text-anchor="middle">Microsoft Sentinel MCP Server</text>
+  <text x="540" y="184" font-size="13" fill="#444" text-anchor="middle">hosted, Entra ID auth, tenant-scoped</text>
+
+  <rect x="410" y="260" width="260" height="90" rx="10" fill="#fff3bf" stroke="#f59e0b" stroke-width="2"/>
+  <text x="540" y="288" font-size="15" font-weight="600" fill="#1e1e1e" text-anchor="middle">MCP tools (collections)</text>
+  <text x="540" y="310" font-size="12.5" fill="#444" text-anchor="middle">data exploration: search_tables, query_lake</text>
+  <text x="540" y="330" font-size="13" fill="#444" text-anchor="middle">triage | agent</text>
+
+  <line x1="540" y1="205" x2="540" y2="255" stroke="#f59e0b" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="552" y="235" font-size="13" fill="#946000">exposes</text>
+
+  <line x1="315" y1="175" x2="415" y2="168" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="362" y="148" font-size="13" fill="#6d28d9" text-anchor="middle">HTTPS / MCP</text>
+
+  <!-- Tenant zone -->
+  <rect x="730" y="90" width="200" height="380" rx="14" fill="#e5dbff" opacity="0.45" stroke="#8b5cf6"/>
+  <text x="750" y="118" font-size="17" font-weight="600" fill="#6d28d9">Tenant</text>
+  <rect x="750" y="140" width="160" height="60" rx="10" fill="#b2f2bb" stroke="#15803d" stroke-width="2"/>
+  <text x="830" y="175" font-size="15" fill="#1e1e1e" text-anchor="middle">Workspace A</text>
+  <rect x="750" y="220" width="160" height="60" rx="10" fill="#b2f2bb" stroke="#15803d" stroke-width="2"/>
+  <text x="830" y="255" font-size="15" fill="#1e1e1e" text-anchor="middle">Workspace B</text>
+  <rect x="750" y="310" width="160" height="70" rx="10" fill="#c3fae8" stroke="#0d9488" stroke-width="2"/>
+  <text x="830" y="340" font-size="15" font-weight="600" fill="#1e1e1e" text-anchor="middle">Data lake</text>
+  <text x="830" y="360" font-size="13" fill="#444" text-anchor="middle">mirrored tables, entities</text>
+  <line x1="830" y1="200" x2="830" y2="305" stroke="#15803d" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arr)"/>
+  <line x1="770" y1="280" x2="770" y2="305" stroke="#15803d" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arr)"/>
+
+  <line x1="660" y1="305" x2="745" y2="330" stroke="#0d9488" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="700" y="300" font-size="13" fill="#0d9488" text-anchor="middle">query</text>
+
+  <path d="M 420 320 C 380 330, 360 325, 320 322" stroke="#15803d" stroke-width="2" stroke-dasharray="6,4" fill="none" marker-end="url(#arr)"/>
+  <text x="368" y="345" font-size="13" fill="#15803d" text-anchor="middle">results</text>
+
+  <!-- Hunting loop -->
+  <text x="60" y="455" font-size="17" font-weight="600" fill="#b45309">Threat hunting loop</text>
+  <rect x="60" y="475" width="180" height="58" rx="10" fill="#fff3bf" stroke="#f59e0b" stroke-width="2"/>
+  <text x="150" y="509" font-size="15" fill="#1e1e1e" text-anchor="middle">1. Hypothesis</text>
+  <line x1="240" y1="504" x2="285" y2="504" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="290" y="475" width="180" height="58" rx="10" fill="#fff3bf" stroke="#f59e0b" stroke-width="2"/>
+  <text x="380" y="509" font-size="15" fill="#1e1e1e" text-anchor="middle">2. Query data</text>
+  <line x1="470" y1="504" x2="515" y2="504" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="520" y="475" width="180" height="58" rx="10" fill="#fff3bf" stroke="#f59e0b" stroke-width="2"/>
+  <text x="610" y="509" font-size="15" fill="#1e1e1e" text-anchor="middle">3. Analyze</text>
+  <line x1="700" y1="504" x2="745" y2="504" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="750" y="475" width="180" height="58" rx="10" fill="#ffd8a8" stroke="#f59e0b" stroke-width="2"/>
+  <text x="840" y="502" font-size="15" fill="#1e1e1e" text-anchor="middle">4. Refine /</text>
+  <text x="840" y="522" font-size="15" fill="#1e1e1e" text-anchor="middle">escalate</text>
+  <path d="M 840 533 L 840 575 L 150 575 L 150 538" stroke="#757575" stroke-width="2" stroke-dasharray="6,4" fill="none" marker-end="url(#arr)"/>
+  <text x="495" y="595" font-size="13" fill="#757575" text-anchor="middle">iterate</text>
+
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1e1e1e"/>
+    </marker>
+  </defs>
+</svg>
