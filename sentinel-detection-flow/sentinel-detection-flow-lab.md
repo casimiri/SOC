@@ -21,7 +21,7 @@ AzureActivity table  ──►  Scheduled analytics rule (KQL + entity mapping)
 
 ## Prerequisites
 
-- An Azure subscription where you can create resource groups (Owner or Contributor on the subscription, plus the ability to assign the connector — Reader on the subscription is required for the Azure Activity data connection).
+- An Azure subscription where you can create resource groups. For the policy-based connector setup in Exercise 1, you need rights to create role assignments at subscription scope (Owner, or Contributor + User Access Administrator); the manual alternative in Exercise 1 only needs Contributor + Monitoring Contributor.
 - Microsoft Sentinel Contributor (or higher) on the resource group that will host the workspace.
 
 ---
@@ -38,8 +38,15 @@ AzureActivity table  ──►  Scheduled analytics rule (KQL + entity mapping)
 
 1. Sentinel → **Content management → Content hub** → search **Azure Activity** → Install.
 2. **Configuration → Data connectors → Azure Activity → Open connector page**.
-3. Under the configuration step, **Launch Azure Policy Assignment wizard**: scope = your subscription → Review + Create. (This deploys the diagnostic settings that route activity logs to your workspace.)
-4. Ingestion is not instant — Azure Activity typically starts flowing in **10–15 minutes**.
+3. Select **Launch Azure Policy Assignment wizard**. Understand what this does before clicking through: it assigns the built-in policy *Configure Azure Activity logs to stream to specified Log Analytics workspace* — a **DeployIfNotExists** policy whose end product is simply a subscription-level **diagnostic setting** routing activity-log categories (Administrative, Security, Policy, Service Health, ...) to your workspace. Three tabs matter:
+   - **Scope (Basics tab)**: select your **subscription** and leave the resource group selector empty — the activity log is a subscription-level resource.
+   - **Parameters tab**: select `law-sentinel-lab` as the **Primary Log Analytics workspace**. This is the most-missed step: the wizard does not always force the field, and an assignment without it deploys nothing.
+   - **Remediation tab**: check **Create a remediation task**. DeployIfNotExists policies fire automatically only for *new or changed* resources; your subscription already exists, so without a remediation task the diagnostic setting is only created at the next background compliance cycle — **up to 24 hours later**. The remediation task forces immediate deployment. It also creates a system-assigned **managed identity** to perform the deployment, which is why the assignment requires Owner-level rights (or Contributor + User Access Administrator) on the subscription.
+   - **Review + Create** → Create.
+4. **Verify the deployment**: Azure portal → **Monitor → Activity log → Export activity logs** — a diagnostic setting targeting `law-sentinel-lab` should appear within a few minutes.
+
+   **Manual alternative (simpler for a single lab subscription)**: skip the policy wizard and create the diagnostic setting directly in that same blade — **Add diagnostic setting** → tick the log categories → **Send to Log Analytics workspace** → select `law-sentinel-lab`. Identical result, fewer moving parts, no Owner requirement. The policy approach exists because it *scales*: assigned at a management group, it wires every subscription beneath it automatically — itself an exam-relevant pattern ("connect Azure Activity logs across 50 subscriptions").
+5. Ingestion is not instant — Azure Activity typically starts flowing in **10–15 minutes** after the diagnostic setting exists.
 
 While waiting, generate some activity: create and delete a throwaway resource group named `test-noise-rg` so the table has data.
 
@@ -50,7 +57,7 @@ AzureActivity
 | take 10
 ```
 
-If rows return, ingestion is live. If empty after 20 minutes, check that the policy assignment succeeded and re-save the diagnostic setting on the subscription (Monitor → Activity log → Export activity logs).
+If rows return, ingestion is live. If empty after 20 minutes: confirm the diagnostic setting exists (step 4); if you used the policy wizard, check the remediation task completed (Policy → Remediation) — a missing remediation task is the most common cause of "the connector shows connected but no data arrives."
 
 ## Exercise 2 — Write and test the detection KQL (~10 min)
 
@@ -124,7 +131,7 @@ Trigger again and compare detection latency against the scheduled rule.
 
 1. Delete resource groups `soc-lab-alert-rg` and `test-noise-rg`.
 2. Disable or delete both analytics rules and the automation rule.
-3. To stop ingestion: remove the Azure Activity diagnostic setting (Monitor → Activity log → Export activity logs) and the policy assignment.
+3. To stop ingestion: remove the Azure Activity diagnostic setting (Monitor → Activity log → Export activity logs) and the policy assignment (Policy → Assignments) if you used the wizard.
 4. To remove everything: delete `rg-sentinel-lab` (removes workspace + Sentinel).
 
 ---
@@ -133,7 +140,7 @@ Trigger again and compare detection latency against the scheduled rule.
 
 | Lab step | Exam skill |
 |---|---|
-| Exercise 1 | Configure and manage data connectors / ingestion |
+| Exercise 1 | Configure and manage data connectors / ingestion (incl. policy-based at-scale onboarding) |
 | Exercises 2–3 | Configure scheduled analytics rules, entity mapping, alert & incident grouping, MITRE mapping |
 | Exercise 4 | Investigate incidents, entities, and entity pages |
 | Exercise 5 | Automation rules: triggers, conditions, ordered actions |
