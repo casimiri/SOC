@@ -1,0 +1,49 @@
+<svg viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="600" fill="#ffffff"/>
+  <text x="480" y="42" font-size="24" font-weight="600" fill="#1e1e1e" text-anchor="middle">Defender for Identity: Modifications to Sensitive Groups Report</text>
+
+  <!-- AD zone -->
+  <rect x="40" y="90" width="290" height="350" rx="14" fill="#dbe4ff" opacity="0.45" stroke="#4a9eed"/>
+  <text x="60" y="118" font-size="16" font-weight="600" fill="#2563eb">On-premises Active Directory</text>
+  <rect x="60" y="140" width="250" height="75" rx="10" fill="#d0bfff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="185" y="172" font-size="14" fill="#1e1e1e" text-anchor="middle">Domain controllers +</text>
+  <text x="185" y="192" font-size="14" fill="#1e1e1e" text-anchor="middle">Defender for Identity sensor</text>
+  <rect x="60" y="250" width="250" height="170" rx="10" fill="#ffd8a8" stroke="#f59e0b" stroke-width="2"/>
+  <text x="185" y="282" font-size="14" font-weight="600" fill="#1e1e1e" text-anchor="middle">Sensitive groups</text>
+  <text x="185" y="307" font-size="13" fill="#444" text-anchor="middle">Domain Admins, Enterprise</text>
+  <text x="185" y="326" font-size="13" fill="#444" text-anchor="middle">Admins, Schema Admins...</text>
+  <text x="185" y="352" font-size="13" fill="#444" text-anchor="middle">+ manually tagged</text>
+  <text x="185" y="371" font-size="13" fill="#444" text-anchor="middle">accounts &amp; groups</text>
+
+  <!-- Modification events -->
+  <rect x="410" y="220" width="240" height="120" rx="10" fill="#ffc9c9" stroke="#ef4444" stroke-width="2"/>
+  <text x="530" y="258" font-size="14" font-weight="600" fill="#1e1e1e" text-anchor="middle">Modification events</text>
+  <text x="530" y="283" font-size="13" fill="#444" text-anchor="middle">members added / removed,</text>
+  <text x="530" y="303" font-size="13" fill="#444" text-anchor="middle">group changes</text>
+
+  <line x1="310" y1="335" x2="405" y2="300" stroke="#f59e0b" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="355" y="305" font-size="13" fill="#946000" text-anchor="middle">changes occur</text>
+  <line x1="310" y1="180" x2="405" y2="245" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="355" y="195" font-size="13" fill="#6d28d9" text-anchor="middle">sensor detects</text>
+
+  <!-- Report -->
+  <rect x="720" y="195" width="210" height="145" rx="10" fill="#b2f2bb" stroke="#15803d" stroke-width="3"/>
+  <text x="825" y="232" font-size="14" font-weight="600" fill="#1e1e1e" text-anchor="middle">Modifications to</text>
+  <text x="825" y="254" font-size="14" font-weight="600" fill="#1e1e1e" text-anchor="middle">sensitive groups report</text>
+  <text x="825" y="285" font-size="13" fill="#444" text-anchor="middle">lists EVERY modification</text>
+  <text x="825" y="305" font-size="13" fill="#444" text-anchor="middle">(complete audit trail)</text>
+  <line x1="650" y1="280" x2="715" y2="270" stroke="#15803d" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="682" y="260" font-size="13" fill="#15803d" text-anchor="middle">listed in</text>
+  <text x="825" y="370" font-size="12.5" fill="#757575" text-anchor="middle">Defender portal: downloadable</text>
+  <text x="825" y="390" font-size="12.5" fill="#757575" text-anchor="middle">(Excel), schedulable delivery</text>
+
+  <!-- Use note -->
+  <text x="40" y="495" font-size="14" fill="#757575">Why it matters: privilege escalation and persistence — an attacker quietly adding an account to</text>
+  <text x="40" y="517" font-size="14" fill="#757575">Domain Admins appears in this report even when no alert fired.</text>
+
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1e1e1e"/>
+    </marker>
+  </defs>
+</svg>
