@@ -41,3 +41,7 @@ Remotely connecting to a device from the Defender portal with **live response**:
 ## Defender for Endpoint: Collect Investigation Package
 
 Gathering forensic evidence with a **one-shot, non-interactive** action that minimizes user disruption: what the investigation package contains (and what it doesn't — no memory dump), the silent background collection flow, Action center download, and the package-vs-live-response-vs-AIR discrimination table. See [the guide](mde-investigation-package/collect-investigation-package.md) with architecture diagram.
+
+## Defender for Endpoint: Submit for Deep Analysis
+
+Detonating a suspicious file in **Microsoft's cloud sandbox** for a behavioral report — process activity, registry changes, network contacts, dropped files — with the online-device + sample-collection prerequisites, the PE-files-only scope, and how deep analysis differs from live response file commands and MDO Safe Attachments. See [the guide](mde-deep-analysis/submit-for-deep-analysis.md) with architecture diagram.
