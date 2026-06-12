@@ -6,7 +6,7 @@ How to block executable content from email messages and unsigned processes runni
 
 ## The scenario
 
-> You have a Microsoft 365 E5 subscription. You plan to deploy Microsoft Defender for Endpoint to: block executable content from email messages, and block unsigned processes that run from USB drives. Which Defender for Endpoint capability should you use?
+> You have a Microsoft 365 E5 subscription. You plan to deploy Microsoft Defender for Endpoint to: block executable content from email messages, and block unsigned processes that run from USB drives.
 
 **Answer: attack surface reduction (ASR) rules.**
 
