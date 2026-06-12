@@ -1,0 +1,56 @@
+<svg viewBox="0 0 960 660" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="660" fill="#ffffff"/>
+  <text x="480" y="42" font-size="25" font-weight="600" fill="#1e1e1e" text-anchor="middle">Blocking Custom IPs &amp; URLs with Defender for Endpoint</text>
+
+  <!-- Licensing -->
+  <rect x="40" y="120" width="230" height="60" rx="10" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="155" y="155" font-size="15" fill="#1e1e1e" text-anchor="middle">Microsoft 365 E5 subscription</text>
+  <rect x="40" y="240" width="230" height="65" rx="10" fill="#d0bfff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="155" y="278" font-size="15" fill="#1e1e1e" text-anchor="middle">Defender for Endpoint Plan 2</text>
+  <line x1="155" y1="180" x2="155" y2="235" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="190" y="212" font-size="13" fill="#555">includes</text>
+
+  <!-- Prerequisites zone -->
+  <rect x="340" y="100" width="270" height="240" rx="14" fill="#c3fae8" opacity="0.45" stroke="#0d9488"/>
+  <text x="360" y="128" font-size="16" font-weight="600" fill="#0d9488">Prerequisites</text>
+  <rect x="360" y="150" width="230" height="75" rx="10" fill="#c3fae8" stroke="#0d9488" stroke-width="2"/>
+  <text x="475" y="183" font-size="14" fill="#1e1e1e" text-anchor="middle">Network protection</text>
+  <text x="475" y="203" font-size="14" fill="#1e1e1e" text-anchor="middle">in block mode</text>
+  <rect x="360" y="245" width="230" height="75" rx="10" fill="#c3fae8" stroke="#0d9488" stroke-width="2"/>
+  <text x="475" y="278" font-size="14" fill="#1e1e1e" text-anchor="middle">Defender Antivirus +</text>
+  <text x="475" y="298" font-size="14" fill="#1e1e1e" text-anchor="middle">cloud-delivered protection</text>
+  <line x1="270" y1="272" x2="355" y2="225" stroke="#0d9488" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="305" y="240" font-size="13" fill="#0d9488" text-anchor="middle">requires</text>
+
+  <!-- Advanced feature -->
+  <rect x="330" y="410" width="290" height="90" rx="10" fill="#ffd8a8" stroke="#f59e0b" stroke-width="3"/>
+  <text x="475" y="445" font-size="15" font-weight="600" fill="#1e1e1e" text-anchor="middle">Advanced feature:</text>
+  <text x="475" y="468" font-size="15" font-weight="600" fill="#1e1e1e" text-anchor="middle">Custom network indicators = ON</text>
+  <text x="475" y="520" font-size="13" fill="#757575" text-anchor="middle">Settings &gt; Endpoints &gt; Advanced features</text>
+  <line x1="475" y1="340" x2="475" y2="405" stroke="#f59e0b" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="520" y="378" font-size="13" fill="#946000">then enable</text>
+
+  <!-- Indicators -->
+  <rect x="690" y="170" width="230" height="110" rx="10" fill="#ffc9c9" stroke="#ef4444" stroke-width="2"/>
+  <text x="805" y="203" font-size="15" font-weight="600" fill="#1e1e1e" text-anchor="middle">Custom indicators</text>
+  <text x="805" y="226" font-size="13" fill="#444" text-anchor="middle">IP addresses, URLs / domains</text>
+  <text x="805" y="246" font-size="13" fill="#444" text-anchor="middle">action: Block</text>
+  <text x="805" y="300" font-size="12.5" fill="#757575" text-anchor="middle">Settings &gt; Endpoints &gt; Indicators</text>
+  <line x1="625" y1="430" x2="745" y2="285" stroke="#ef4444" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="660" y="365" font-size="13" fill="#b91c1c" text-anchor="middle">unlocks</text>
+
+  <!-- Enforcement -->
+  <rect x="690" y="400" width="230" height="120" rx="10" fill="#b2f2bb" stroke="#15803d" stroke-width="2"/>
+  <text x="805" y="433" font-size="15" font-weight="600" fill="#1e1e1e" text-anchor="middle">Enforced on devices</text>
+  <text x="805" y="458" font-size="13" fill="#444" text-anchor="middle">SmartScreen (Microsoft Edge)</text>
+  <text x="805" y="478" font-size="13" fill="#444" text-anchor="middle">Network protection</text>
+  <text x="805" y="498" font-size="13" fill="#444" text-anchor="middle">(other browsers + processes)</text>
+  <line x1="805" y1="285" x2="805" y2="395" stroke="#15803d" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="840" y="345" font-size="13" fill="#15803d">applied</text>
+
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1e1e1e"/>
+    </marker>
+  </defs>
+</svg>
