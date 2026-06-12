@@ -1,0 +1,51 @@
+<svg viewBox="0 0 960 660" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="660" fill="#ffffff"/>
+  <text x="480" y="42" font-size="24" font-weight="600" fill="#1e1e1e" text-anchor="middle">Defender for Endpoint: Collect Investigation Package</text>
+
+  <!-- Portal zone -->
+  <rect x="40" y="90" width="290" height="230" rx="14" fill="#dbe4ff" opacity="0.35" stroke="#4a9eed"/>
+  <text x="60" y="118" font-size="16" font-weight="600" fill="#2563eb">Microsoft Defender portal</text>
+  <rect x="60" y="140" width="250" height="55" rx="10" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="185" y="173" font-size="15" fill="#1e1e1e" text-anchor="middle">Security analyst</text>
+  <rect x="60" y="225" width="250" height="70" rx="10" fill="#ffd8a8" stroke="#f59e0b" stroke-width="2"/>
+  <text x="185" y="255" font-size="13" fill="#1e1e1e" text-anchor="middle">Device page &gt;</text>
+  <text x="185" y="275" font-size="13" fill="#1e1e1e" text-anchor="middle">Collect investigation package</text>
+  <line x1="185" y1="195" x2="185" y2="220" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arr)"/>
+
+  <line x1="330" y1="262" x2="595" y2="245" stroke="#8b5cf6" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="462" y="232" font-size="13" fill="#6d28d9" text-anchor="middle">one-shot action via MDE cloud channel</text>
+
+  <!-- Device zone -->
+  <rect x="600" y="90" width="330" height="450" rx="14" fill="#c3fae8" opacity="0.35" stroke="#0d9488"/>
+  <text x="620" y="116" font-size="15" font-weight="600" fill="#0d9488">Device — silent background collection</text>
+  <rect x="620" y="135" width="290" height="48" rx="8" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="765" y="164" font-size="13" fill="#1e1e1e" text-anchor="middle">Running processes</text>
+  <rect x="620" y="193" width="290" height="48" rx="8" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="765" y="222" font-size="13" fill="#1e1e1e" text-anchor="middle">Network connections + SMB sessions</text>
+  <rect x="620" y="251" width="290" height="48" rx="8" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="765" y="280" font-size="13" fill="#1e1e1e" text-anchor="middle">Autoruns &amp; scheduled tasks</text>
+  <rect x="620" y="309" width="290" height="48" rx="8" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="765" y="338" font-size="13" fill="#1e1e1e" text-anchor="middle">Event logs, services, installed programs</text>
+  <rect x="620" y="367" width="290" height="48" rx="8" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="765" y="396" font-size="13" fill="#1e1e1e" text-anchor="middle">System info, users &amp; groups, prefetch</text>
+  <line x1="765" y1="415" x2="765" y2="445" stroke="#f59e0b" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="620" y="450" width="290" height="58" rx="8" fill="#ffd8a8" stroke="#f59e0b" stroke-width="2"/>
+  <text x="765" y="485" font-size="14" font-weight="600" fill="#1e1e1e" text-anchor="middle">Investigation package (.zip)</text>
+
+  <!-- Download -->
+  <rect x="40" y="430" width="280" height="80" rx="10" fill="#b2f2bb" stroke="#15803d" stroke-width="2"/>
+  <text x="180" y="463" font-size="13" fill="#1e1e1e" text-anchor="middle">Action center: collection ready —</text>
+  <text x="180" y="483" font-size="13" fill="#1e1e1e" text-anchor="middle">download package</text>
+  <line x1="615" y1="478" x2="325" y2="470" stroke="#15803d" stroke-width="2" stroke-dasharray="7,5" marker-end="url(#arr)"/>
+  <text x="470" y="458" font-size="13" fill="#15803d" text-anchor="middle">download</text>
+
+  <!-- Notes -->
+  <text x="40" y="565" font-size="14" fill="#757575">One-shot &amp; non-interactive → minimal disruption to the user.</text>
+  <text x="40" y="587" font-size="14" fill="#757575">Need an interactive shell or a specific file? → use live response instead.</text>
+
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1e1e1e"/>
+    </marker>
+  </defs>
+</svg>
