@@ -33,3 +33,7 @@ Why the **Microsoft Defender XDR plugin** must be enabled in Security Copilot fo
 ## Device Page Timeline Tab: Events Before an Alert
 
 Reviewing the events that occurred **before** a high-severity alert using the **Timeline tab** on the device page: the per-device chronological event stream, filtering by MITRE technique, event flags, CSV export, 6-month history, and how the timeline differs from the alert story, Advanced Hunting, and the incident graph. See [the guide](mde-device-timeline/device-timeline-events-before-alert.md) with architecture diagram.
+
+## Defender for Endpoint: Live Response
+
+Remotely connecting to a device from the Defender portal with **live response**: the cloud session channel (works on isolated devices), the inspect/collect/run/remediate command families, the three Advanced features toggles (live response, for servers, unsigned scripts), basic vs. advanced RBAC, and how it differs from investigation packages and AIR. See [the guide](mde-live-response/live-response.md) with architecture diagram.
