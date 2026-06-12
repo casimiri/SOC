@@ -25,3 +25,7 @@ Blocking executable content from email and unsigned processes from USB drives wi
 ## Defender for Identity: Modifications to Sensitive Groups Report
 
 A complete audit trail of every change to sensitive AD groups (built-in privileged groups + manually tagged accounts/groups), detected by the **MDI sensor** on domain controllers — including the report-vs-alert distinction and the `IdentityDirectoryEvents` hunting companion. See [the guide](mdi-sensitive-groups-report/modifications-to-sensitive-groups-report.md) with architecture diagram.
+
+## Security Copilot: Defender XDR Plugin & Embedded Experience
+
+Why the **Microsoft Defender XDR plugin** must be enabled in Security Copilot for the embedded Copilot features in the Defender portal to work — incident summaries, guided responses, script analysis, NL-to-KQL, and incident reports — plus the SCU capacity prerequisite and the standalone-vs-embedded distinction. See [the guide](security-copilot-defender-xdr-plugin/security-copilot-defender-xdr-plugin.md) with architecture diagram.
