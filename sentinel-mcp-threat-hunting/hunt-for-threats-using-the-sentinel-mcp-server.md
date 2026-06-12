@@ -79,6 +79,10 @@ A typical hunt follows the classic loop, with the agent removing the need to mem
 - Responses are processed by the model in your MCP client; review your organization's policy on sending security data to AI assistants.
 - Treat agent-generated KQL like any other code: review before operationalizing it as an analytics rule or custom detection.
 
+## Hands-on lab
+
+Run the whole workflow yourself — with **Claude** as the MCP client instead of GitHub Copilot — in the companion lab: [Sentinel MCP Hunting Lab (Claude edition)](sentinel-mcp-hunting-lab-claude.md) (~45–60 min, builds on the detection-flow lab's workspace and data).
+
 ## References
 
 - [What is Microsoft Sentinel's support for MCP?](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-overview)
