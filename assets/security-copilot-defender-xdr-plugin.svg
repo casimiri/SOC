@@ -1,0 +1,44 @@
+<svg viewBox="0 0 960 660" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="660" fill="#ffffff"/>
+  <text x="480" y="42" font-size="23" font-weight="600" fill="#1e1e1e" text-anchor="middle">Security Copilot — Defender XDR Plugin &amp; Embedded Experience</text>
+
+  <!-- Security Copilot zone -->
+  <rect x="40" y="100" width="340" height="340" rx="14" fill="#e5dbff" opacity="0.45" stroke="#8b5cf6"/>
+  <text x="60" y="128" font-size="16" font-weight="600" fill="#6d28d9">Security Copilot (standalone portal)</text>
+  <rect x="60" y="155" width="300" height="85" rx="10" fill="#ffd8a8" stroke="#f59e0b" stroke-width="3"/>
+  <text x="210" y="192" font-size="15" font-weight="600" fill="#1e1e1e" text-anchor="middle">Microsoft Defender XDR</text>
+  <text x="210" y="214" font-size="15" font-weight="600" fill="#1e1e1e" text-anchor="middle">plugin = ON</text>
+  <text x="60" y="262" font-size="13" fill="#757575">Sources &gt; Manage plugins</text>
+  <rect x="60" y="290" width="300" height="80" rx="10" fill="#c3fae8" stroke="#0d9488" stroke-width="2"/>
+  <text x="210" y="323" font-size="14" fill="#1e1e1e" text-anchor="middle">Prereq: provisioned capacity</text>
+  <text x="210" y="343" font-size="14" fill="#1e1e1e" text-anchor="middle">(Security Compute Units)</text>
+
+  <!-- Defender portal zone -->
+  <rect x="500" y="90" width="420" height="430" rx="14" fill="#dbe4ff" opacity="0.45" stroke="#4a9eed"/>
+  <text x="520" y="118" font-size="16" font-weight="600" fill="#2563eb">Defender portal — embedded Copilot</text>
+  <rect x="520" y="140" width="380" height="55" rx="10" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="710" y="173" font-size="14" fill="#1e1e1e" text-anchor="middle">Incident summaries</text>
+  <rect x="520" y="212" width="380" height="55" rx="10" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="710" y="245" font-size="14" fill="#1e1e1e" text-anchor="middle">Guided responses</text>
+  <rect x="520" y="284" width="380" height="55" rx="10" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="710" y="317" font-size="14" fill="#1e1e1e" text-anchor="middle">Script &amp; file analysis</text>
+  <rect x="520" y="356" width="380" height="55" rx="10" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="710" y="389" font-size="14" fill="#1e1e1e" text-anchor="middle">Natural language to KQL (hunting)</text>
+  <rect x="520" y="428" width="380" height="55" rx="10" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="710" y="461" font-size="14" fill="#1e1e1e" text-anchor="middle">Incident reports</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="197" x2="495" y2="250" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="420" y="200" font-size="13" fill="#946000" text-anchor="middle">invokes XDR product-</text>
+  <text x="420" y="218" font-size="13" fill="#946000" text-anchor="middle">specific capabilities</text>
+
+  <!-- Warning -->
+  <text x="40" y="570" font-size="15" fill="#e03131">Plugin disabled → incident summaries, guided responses and all embedded Copilot features</text>
+  <text x="40" y="592" font-size="15" fill="#e03131">are UNAVAILABLE in Microsoft Defender XDR.</text>
+
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1e1e1e"/>
+    </marker>
+  </defs>
+</svg>
