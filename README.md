@@ -37,3 +37,7 @@ Reviewing the events that occurred **before** a high-severity alert using the **
 ## Defender for Endpoint: Live Response
 
 Remotely connecting to a device from the Defender portal with **live response**: the cloud session channel (works on isolated devices), the inspect/collect/run/remediate command families, the three Advanced features toggles (live response, for servers, unsigned scripts), basic vs. advanced RBAC, and how it differs from investigation packages and AIR. See [the guide](mde-live-response/live-response.md) with architecture diagram.
+
+## Defender for Endpoint: Collect Investigation Package
+
+Gathering forensic evidence with a **one-shot, non-interactive** action that minimizes user disruption: what the investigation package contains (and what it doesn't — no memory dump), the silent background collection flow, Action center download, and the package-vs-live-response-vs-AIR discrimination table. See [the guide](mde-investigation-package/collect-investigation-package.md) with architecture diagram.
