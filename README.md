@@ -45,3 +45,7 @@ Gathering forensic evidence with a **one-shot, non-interactive** action that min
 ## Defender for Endpoint: Submit for Deep Analysis
 
 Detonating a suspicious file in **Microsoft's cloud sandbox** for a behavioral report — process activity, registry changes, network contacts, dropped files — with the online-device + sample-collection prerequisites, the PE-files-only scope, and how deep analysis differs from live response file commands and MDO Safe Attachments. See [the guide](mde-deep-analysis/submit-for-deep-analysis.md) with architecture diagram.
+
+## From the Alert Process Tree to the IP Address Entity Page
+
+Investigating an external IP's **related activity, alerts, and context** directly from incident evidence: the entity-pivot model, the entity page sections (TI overview, tenant-wide incidents, organizational prevalence), and the Add indicator / Go hunt pivot actions. See [the guide](mde-ip-entity-page/ip-address-entity-page.md) with architecture diagram.
