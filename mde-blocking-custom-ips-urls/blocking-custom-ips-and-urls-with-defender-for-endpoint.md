@@ -4,7 +4,7 @@ How to block specific IP addresses and URLs on devices using Microsoft Defender 
 
 ![Flow: Microsoft 365 E5 includes Defender for Endpoint P2, which requires network protection in block mode and Defender AV with cloud protection; the Custom network indicators advanced feature unlocks IP/URL indicators with a Block action, enforced via SmartScreen and network protection](../assets/mde-blocking-custom-ips-urls.svg)
 
-## The short answer
+## How to?
 
 To block specific IP addresses and URLs with Defender for Endpoint, enable the advanced feature **Custom network indicators** (Microsoft Defender portal → **Settings → Endpoints → Advanced features**), then create indicators with a **Block** action under **Settings → Endpoints → Indicators**. Until the advanced feature is on, IP and URL indicators will not enforce.
 
