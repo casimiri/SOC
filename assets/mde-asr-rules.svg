@@ -1,0 +1,54 @@
+<svg viewBox="0 0 960 640" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="640" fill="#ffffff"/>
+  <text x="480" y="42" font-size="25" font-weight="600" fill="#1e1e1e" text-anchor="middle">Attack Surface Reduction (ASR) Rules</text>
+
+  <!-- Licensing -->
+  <rect x="40" y="130" width="220" height="60" rx="10" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="150" y="165" font-size="15" fill="#1e1e1e" text-anchor="middle">Microsoft 365 E5 subscription</text>
+  <rect x="40" y="250" width="220" height="65" rx="10" fill="#d0bfff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="150" y="288" font-size="15" fill="#1e1e1e" text-anchor="middle">Defender for Endpoint</text>
+  <line x1="150" y1="190" x2="150" y2="245" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="185" y="222" font-size="13" fill="#555">includes</text>
+
+  <!-- ASR zone -->
+  <rect x="330" y="100" width="320" height="360" rx="14" fill="#ffd8a8" opacity="0.45" stroke="#f59e0b" stroke-width="2"/>
+  <text x="350" y="130" font-size="17" font-weight="600" fill="#b45309">Attack surface reduction rules</text>
+  <line x1="260" y1="282" x2="325" y2="282" stroke="#f59e0b" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="292" y="270" font-size="13" fill="#946000" text-anchor="middle">capability</text>
+
+  <rect x="350" y="160" width="280" height="95" rx="10" fill="#ffc9c9" stroke="#ef4444" stroke-width="2"/>
+  <text x="490" y="195" font-size="14" font-weight="600" fill="#1e1e1e" text-anchor="middle">Block executable content from</text>
+  <text x="490" y="217" font-size="14" font-weight="600" fill="#1e1e1e" text-anchor="middle">email client and webmail</text>
+
+  <rect x="350" y="285" width="280" height="95" rx="10" fill="#ffc9c9" stroke="#ef4444" stroke-width="2"/>
+  <text x="490" y="320" font-size="14" font-weight="600" fill="#1e1e1e" text-anchor="middle">Block untrusted and unsigned</text>
+  <text x="490" y="342" font-size="14" font-weight="600" fill="#1e1e1e" text-anchor="middle">processes that run from USB</text>
+
+  <text x="350" y="420" font-size="13" fill="#757575">each requirement maps to one</text>
+  <text x="350" y="440" font-size="13" fill="#757575">built-in ASR rule (~16 total)</text>
+
+  <!-- Right column -->
+  <rect x="710" y="120" width="200" height="90" rx="10" fill="#c3fae8" stroke="#0d9488" stroke-width="2"/>
+  <text x="810" y="155" font-size="14" fill="#1e1e1e" text-anchor="middle">Requires Defender Antivirus</text>
+  <text x="810" y="175" font-size="14" fill="#1e1e1e" text-anchor="middle">as primary AV</text>
+  <line x1="650" y1="180" x2="705" y2="168" stroke="#0d9488" stroke-width="2" marker-end="url(#arr)"/>
+
+  <rect x="710" y="250" width="200" height="70" rx="10" fill="#b2f2bb" stroke="#15803d" stroke-width="2"/>
+  <text x="810" y="290" font-size="14" fill="#1e1e1e" text-anchor="middle">Modes: Block / Audit / Warn</text>
+  <line x1="650" y1="285" x2="705" y2="285" stroke="#15803d" stroke-width="2" marker-end="url(#arr)"/>
+
+  <rect x="710" y="360" width="200" height="80" rx="10" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="810" y="395" font-size="14" fill="#1e1e1e" text-anchor="middle">Deployed via Intune,</text>
+  <text x="810" y="415" font-size="14" fill="#1e1e1e" text-anchor="middle">GPO, PowerShell</text>
+  <line x1="650" y1="390" x2="705" y2="398" stroke="#2563eb" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Distractors -->
+  <text x="40" y="510" font-size="14" fill="#757575">Distractors: network protection (web/IP traffic), controlled folder access (ransomware),</text>
+  <text x="40" y="532" font-size="14" fill="#757575">device control (blocks the USB storage device itself, not processes running from it)</text>
+
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1e1e1e"/>
+    </marker>
+  </defs>
+</svg>
