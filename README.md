@@ -8,7 +8,7 @@ A walkthrough of how Microsoft Sentinel turns raw signals into triageable incide
 
 ## Hunt for Threats Using the Sentinel MCP Server
 
-AI-assisted threat hunting over the Microsoft Sentinel data lake: connect **GitHub Copilot in agent mode** (VS Code) to the hosted **Sentinel MCP server** and hunt across tenant workspaces with natural language, notebooks, and the `search_tables` / `query_lake` tools. See [the guide](sentinel-mcp-threat-hunting/hunt-for-threats-using-the-sentinel-mcp-server.md) with architecture diagram.
+AI-assisted threat hunting over the Microsoft Sentinel data lake: connect **GitHub Copilot in agent mode** (VS Code) to the hosted **Sentinel MCP server** and hunt across tenant workspaces with natural language, notebooks, and the `search_tables` / `query_lake` tools. See [the guide](sentinel-mcp-threat-hunting/hunt-for-threats-using-the-sentinel-mcp-server.md) with architecture diagram, plus a **[hands-on lab](sentinel-mcp-threat-hunting/sentinel-mcp-hunting-lab-claude.md)** that runs the full hunting loop with **Claude** as the MCP client (~45–60 min, builds on the detection-flow lab's data).
 
 ## Summary Rules, Workspace Tiers and Entity Tables
 
