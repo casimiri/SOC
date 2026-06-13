@@ -5,7 +5,7 @@ A hands-on lab connecting **Claude** (Claude Code or Claude Desktop) to the host
 **Estimated time**: 45–60 minutes
 **Builds on**: the [Sentinel Detection Flow lab](../sentinel-detection-flow/sentinel-detection-flow-lab.md) — reusing its workspace and `AzureActivity` data gives you something real to hunt.
 
-> **Exam note**: the SC-200 outline frames this scenario with **VS Code + GitHub Copilot in agent mode** as the MCP client — that's the officially documented stack and what exam answers expect. The Sentinel MCP server, however, is a standard MCP endpoint with Entra ID OAuth, so any MCP-capable client can connect. This lab uses Claude to demonstrate exactly that point: the protocol is the interface, not the specific copilot.
+> **Exam note**: The Sentinel MCP server, however, is a standard MCP endpoint with Entra ID OAuth, so any MCP-capable client can connect. This lab uses Claude to demonstrate exactly that point: the protocol is the interface, not the specific copilot.
 
 ## Architecture
 
