@@ -31,7 +31,7 @@ Claude (Claude Code / Desktop)  ──MCP over HTTPS + Entra ID OAuth──►  
 
 ## Exercise 0 — Verify data lake onboarding (~10 min)
 
-1. Open the **Microsoft Defender portal** → **Microsoft Sentinel → Data lake** (or Settings → Microsoft Sentinel → data lake settings, depending on rollout).
+1. Open the **Microsoft Defender portal** → Settings → Microsoft Sentinel → data lake settings.
 2. If the data lake isn't enabled, complete onboarding for your tenant and confirm your lab workspace is included. Mirroring of Analytics-tier tables into the lake begins automatically after onboarding.
 3. Note the delay: freshly onboarded lakes need some time before tables are queryable.
 
