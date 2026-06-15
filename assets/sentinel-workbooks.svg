@@ -1,0 +1,55 @@
+<svg viewBox="0 0 960 560" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="560" fill="#ffffff"/>
+  <text x="480" y="40" font-size="24" font-weight="600" fill="#1e1e1e" text-anchor="middle">Microsoft Sentinel Workbooks: Visualize &amp; Monitor</text>
+
+  <!-- Data sources zone -->
+  <rect x="40" y="90" width="230" height="330" rx="14" fill="#dbe4ff" opacity="0.35" stroke="#4a9eed"/>
+  <text x="60" y="117" font-size="15" font-weight="600" fill="#2563eb">Connected data sources</text>
+  <rect x="60" y="135" width="190" height="50" rx="8" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="155" y="165" font-size="13" fill="#1e1e1e" text-anchor="middle">Microsoft services</text>
+  <rect x="60" y="200" width="190" height="50" rx="8" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="155" y="230" font-size="13" fill="#1e1e1e" text-anchor="middle">Azure / Entra logs</text>
+  <rect x="60" y="265" width="190" height="50" rx="8" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="155" y="295" font-size="13" fill="#1e1e1e" text-anchor="middle">Syslog / CEF</text>
+  <rect x="60" y="330" width="190" height="50" rx="8" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="155" y="360" font-size="13" fill="#1e1e1e" text-anchor="middle">3rd-party connectors</text>
+
+  <!-- Workspace -->
+  <rect x="350" y="210" width="200" height="90" rx="10" fill="#c3fae8" stroke="#0d9488" stroke-width="2"/>
+  <text x="450" y="248" font-size="14" fill="#1e1e1e" text-anchor="middle">Log Analytics workspace</text>
+  <text x="450" y="270" font-size="13" fill="#444" text-anchor="middle">(Sentinel tables)</text>
+  <line x1="270" y1="255" x2="345" y2="255" stroke="#2563eb" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="307" y="245" font-size="13" fill="#2563eb" text-anchor="middle">ingest</text>
+
+  <!-- Workbooks zone -->
+  <rect x="630" y="80" width="300" height="360" rx="14" fill="#ffd8a8" opacity="0.4" stroke="#f59e0b"/>
+  <text x="650" y="108" font-size="16" font-weight="600" fill="#b45309">Microsoft Sentinel workbooks</text>
+  <rect x="650" y="125" width="260" height="50" rx="8" fill="#d0bfff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="780" y="155" font-size="13" fill="#1e1e1e" text-anchor="middle">KQL queries pull from the tables</text>
+  <rect x="650" y="195" width="260" height="140" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="2"/>
+  <text x="780" y="235" font-size="13" fill="#1e1e1e" text-anchor="middle">Custom dashboard: charts, grids,</text>
+  <text x="780" y="258" font-size="13" fill="#1e1e1e" text-anchor="middle">time series, maps, tiles</text>
+  <text x="780" y="290" font-size="13" fill="#1e1e1e" text-anchor="middle">+ interactive filters / parameters</text>
+  <rect x="650" y="355" width="260" height="55" rx="8" fill="#b2f2bb" stroke="#15803d" stroke-width="2"/>
+  <text x="780" y="388" font-size="13" fill="#1e1e1e" text-anchor="middle">Built-in templates or build your own</text>
+  <line x1="550" y1="235" x2="645" y2="155" stroke="#f59e0b" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="600" y="180" font-size="13" fill="#946000" text-anchor="middle">query</text>
+  <line x1="780" y1="175" x2="780" y2="193" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Analyst -->
+  <rect x="350" y="370" width="200" height="70" rx="10" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="450" y="400" font-size="13" fill="#1e1e1e" text-anchor="middle">Analyst: monitor &amp;</text>
+  <text x="450" y="420" font-size="13" fill="#1e1e1e" text-anchor="middle">investigate visually</text>
+  <line x1="645" y1="385" x2="555" y2="405" stroke="#757575" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+  <text x="600" y="430" font-size="12" fill="#757575" text-anchor="middle">view</text>
+
+  <!-- Note -->
+  <text x="40" y="475" font-size="14" fill="#757575">Workbooks = visualization layer (dashboards), built on Azure Monitor workbooks.</text>
+  <text x="40" y="497" font-size="14" fill="#757575">Not a detection engine — that is analytics rules.</text>
+
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1e1e1e"/>
+    </marker>
+  </defs>
+</svg>
