@@ -22,6 +22,10 @@ Visualizing and monitoring connected data with **workbooks** — custom, interac
 
 Which table does Entra ID data land in? The **Microsoft Entra ID** connector routes sign-in and audit activity to `SigninLogs` and `AuditLogs`; the **Microsoft Entra ID Protection** connector routes identity risk alerts to `SecurityAlert`. Clears up the common "Entra ID connector writes to SecurityAlert" misconception, with the table-selection exam tells. See [the guide](entra-id-connector-tables/entra-id-connector-tables.md) with architecture diagram.
 
+## Onboarding On-Prem Servers with Azure Arc + AMA
+
+Why on-premises servers must be **Arc-enabled** before DCRs and the **Windows Security Events via AMA** connector can target them: install the Azure Connected Machine agent → the server becomes an Azure resource in the picker → the connector creates a DCR and deploys AMA → events flow to `SecurityEvent`. See [the guide](arc-ama-onboarding/onboard-onprem-servers-arc-ama.md) with architecture diagram.
+
 ## Blocking Custom IPs & URLs with Defender for Endpoint
 
 Blocking specific IP addresses and URLs on devices with **custom network indicators**: the **Custom network indicators** advanced feature, the network protection (block mode) and Defender AV prerequisites, and enforcement via SmartScreen vs. network protection. See [the guide](mde-blocking-custom-ips-urls/blocking-custom-ips-and-urls-with-defender-for-endpoint.md) with architecture diagram.
