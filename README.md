@@ -18,6 +18,10 @@ How the Sentinel platform balances cost and queryability: the **Analytics** and 
 
 Visualizing and monitoring connected data with **workbooks** — custom, interactive dashboards built on Azure Monitor workbooks that run KQL against the workspace tables. Covers templates vs. saved instances, the visualize-vs-detect distinction, and how workbooks differ from hunting, notebooks, and overview pages. See [the guide](sentinel-workbooks/sentinel-workbooks-visualize-and-monitor.md) with architecture diagram.
 
+## Entra ID Connectors and Their Sentinel Tables
+
+Which table does Entra ID data land in? The **Microsoft Entra ID** connector routes sign-in and audit activity to `SigninLogs` and `AuditLogs`; the **Microsoft Entra ID Protection** connector routes identity risk alerts to `SecurityAlert`. Clears up the common "Entra ID connector writes to SecurityAlert" misconception, with the table-selection exam tells. See [the guide](entra-id-connector-tables/entra-id-connector-tables.md) with architecture diagram.
+
 ## Blocking Custom IPs & URLs with Defender for Endpoint
 
 Blocking specific IP addresses and URLs on devices with **custom network indicators**: the **Custom network indicators** advanced feature, the network protection (block mode) and Defender AV prerequisites, and enforcement via SmartScreen vs. network protection. See [the guide](mde-blocking-custom-ips-urls/blocking-custom-ips-and-urls-with-defender-for-endpoint.md) with architecture diagram.
