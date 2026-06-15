@@ -1,0 +1,46 @@
+<svg viewBox="0 0 960 580" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="580" fill="#ffffff"/>
+  <text x="480" y="40" font-size="23" font-weight="600" fill="#1e1e1e" text-anchor="middle">Entra ID Connectors and Their Sentinel Tables</text>
+
+  <!-- Source -->
+  <rect x="50" y="110" width="200" height="80" rx="10" fill="#dbe4ff" stroke="#4a9eed" stroke-width="2"/>
+  <text x="150" y="155" font-size="14" fill="#1e1e1e" text-anchor="middle">Microsoft Entra ID (tenant)</text>
+
+  <!-- Connectors -->
+  <rect x="320" y="90" width="240" height="60" rx="10" fill="#d0bfff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="440" y="125" font-size="13" fill="#1e1e1e" text-anchor="middle">Connector: Microsoft Entra ID</text>
+  <rect x="320" y="300" width="240" height="70" rx="10" fill="#ffd8a8" stroke="#f59e0b" stroke-width="2"/>
+  <text x="440" y="330" font-size="13" fill="#1e1e1e" text-anchor="middle">Connector: Microsoft</text>
+  <text x="440" y="350" font-size="13" fill="#1e1e1e" text-anchor="middle">Entra ID Protection</text>
+
+  <line x1="250" y1="135" x2="315" y2="118" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="282" y="110" font-size="12" fill="#6d28d9" text-anchor="middle">activity logs</text>
+  <line x1="250" y1="170" x2="315" y2="320" stroke="#f59e0b" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="270" y="255" font-size="12" fill="#946000" text-anchor="middle">risk detections</text>
+
+  <!-- Tables zone -->
+  <rect x="610" y="75" width="290" height="390" rx="14" fill="#c3fae8" opacity="0.35" stroke="#0d9488"/>
+  <text x="630" y="103" font-size="14" font-weight="600" fill="#0d9488">Log Analytics workspace tables</text>
+  <rect x="630" y="120" width="250" height="50" rx="8" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="755" y="150" font-size="14" fill="#1e1e1e" text-anchor="middle">SigninLogs</text>
+  <rect x="630" y="185" width="250" height="50" rx="8" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="755" y="215" font-size="14" fill="#1e1e1e" text-anchor="middle">AuditLogs</text>
+  <rect x="630" y="250" width="250" height="50" rx="8" fill="#a5d8ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="755" y="280" font-size="13" fill="#1e1e1e" text-anchor="middle">AADProvisioningLogs, etc.</text>
+  <rect x="630" y="375" width="250" height="60" rx="8" fill="#ffc9c9" stroke="#ef4444" stroke-width="2"/>
+  <text x="755" y="410" font-size="14" font-weight="600" fill="#1e1e1e" text-anchor="middle">SecurityAlert</text>
+
+  <line x1="560" y1="115" x2="625" y2="140" stroke="#2563eb" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="560" y1="125" x2="625" y2="205" stroke="#2563eb" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="560" y1="335" x2="625" y2="400" stroke="#ef4444" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Note -->
+  <text x="50" y="500" font-size="14" fill="#e03131">SecurityAlert holds security PRODUCT alerts (e.g. Entra ID Protection risk detections).</text>
+  <text x="50" y="522" font-size="14" fill="#e03131">The base Entra ID connector's activity logs go to SigninLogs / AuditLogs — NOT SecurityAlert.</text>
+
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1e1e1e"/>
+    </marker>
+  </defs>
+</svg>
