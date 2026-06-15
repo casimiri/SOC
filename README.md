@@ -14,6 +14,10 @@ AI-assisted threat hunting over the Microsoft Sentinel data lake: connect **GitH
 
 How the Sentinel platform balances cost and queryability: the **Analytics** and **Data lake** tiers, **summary rules** for scheduled aggregation, **KQL jobs** for retrospective hunts, and the **entity tables** behind Sentinel Graph and UEBA. See [the guide](summary-rules-workspace-tiers/summary-rules-workspace-tiers-and-entity-tables.md) with architecture diagram.
 
+## Sentinel Workbooks: Visualize & Monitor
+
+Visualizing and monitoring connected data with **workbooks** — custom, interactive dashboards built on Azure Monitor workbooks that run KQL against the workspace tables. Covers templates vs. saved instances, the visualize-vs-detect distinction, and how workbooks differ from hunting, notebooks, and overview pages. See [the guide](sentinel-workbooks/sentinel-workbooks-visualize-and-monitor.md) with architecture diagram.
+
 ## Blocking Custom IPs & URLs with Defender for Endpoint
 
 Blocking specific IP addresses and URLs on devices with **custom network indicators**: the **Custom network indicators** advanced feature, the network protection (block mode) and Defender AV prerequisites, and enforcement via SmartScreen vs. network protection. See [the guide](mde-blocking-custom-ips-urls/blocking-custom-ips-and-urls-with-defender-for-endpoint.md) with architecture diagram.
