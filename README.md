@@ -14,6 +14,10 @@ AI-assisted threat hunting over the Microsoft Sentinel data lake: connect **GitH
 
 How the Sentinel platform balances cost and queryability: the **Analytics** and **Data lake** tiers, **summary rules** for scheduled aggregation, **KQL jobs** for retrospective hunts, and the **entity tables** behind Sentinel Graph and UEBA. See [the guide](summary-rules-workspace-tiers/summary-rules-workspace-tiers-and-entity-tables.md) with architecture diagram.
 
+## Entity Mapping in Analytics Rules
+
+How **entity mapping** enriches alerts and incidents by mapping KQL result columns to entity identifiers (Account, Host, IP, File/URL) — the building blocks for entity pages, the graph, UEBA, alert grouping, and automation. Covers why it's available **only in scheduled and NRT rules** and not in TI/Fusion/ML types. See [the guide](entity-mapping/entity-mapping-in-analytics-rules.md) with architecture diagram.
+
 ## Sentinel Workbooks: Visualize & Monitor
 
 Visualizing and monitoring connected data with **workbooks** — custom, interactive dashboards built on Azure Monitor workbooks that run KQL against the workspace tables. Covers templates vs. saved instances, the visualize-vs-detect distinction, and how workbooks differ from hunting, notebooks, and overview pages. See [the guide](sentinel-workbooks/sentinel-workbooks-visualize-and-monitor.md) with architecture diagram.
